@@ -102,3 +102,18 @@ p-menubarsub {
 #profile-education {
     background-color: #E0E0E0;
 }
+
+#profile-other {
+    background-color: #212121;
+    color: #FFFFFF;
+}
+
+#profile-other .p-rating .p-rating-icon.p-rating-icon-active {
+    color: #FFFFFF;
+}
+
+.hobbies > span {
+    margin-right: 5px;
+    font-size: 100%;
+    margin-bottom: 5px;
+}

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,8 @@ import { ProfileBannerComponent } from './profile/profile-banner.component';
 import { ProfileExperienceComponent } from './profile/profile-experience.component';
 import { ProfileEducationComponent } from './profile/profile-education.component';
 import { ProfileOtherComponent } from './profile/profile-other.component';
+import { LanguageViewComponent } from './profile/language-view.component';
+import { RatingModule } from 'primeng/rating';
 
 const appRoutes: Routes = [
   { path: '', component: ProfileComponent },
@@ -32,16 +35,19 @@ const appRoutes: Routes = [
     ProfileExperienceComponent,
     ProfileEducationComponent,
     ProfileOtherComponent,
+    LanguageViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MenubarModule,
+    RatingModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      appRoutes
     )
   ],
   providers: [],

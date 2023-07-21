@@ -1,1 +1,31 @@
-<p>profile-other works!</p>
+<section id="profile-other">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Datacamp Certiﬁcations in Python July 2023</li>
+                    <li>Datacamp Certiﬁcation in Excel May 2023</li>
+                    <li>Datacamp Certiﬁcation in SQL July 2023</li>
+                    <li>Datacamp Certiﬁcation in Power BI June 2023</li>
+                    <li>Datacamp Certiﬁcation in Tableau June 2023</li>
+                </ul>
+
+                <h2 class="mt-3">Hobbies</h2>
+                <div class="hobbies">
+                    <span class="badge rounded-pill bg-secondary">Travelling</span>
+                    <span class="badge rounded-pill bg-secondary">Cooking</span>
+                    <span class="badge rounded-pill bg-secondary">Making Friends</span>
+                    <span class="badge rounded-pill bg-secondary">Reading Books</span>
+                    <span class="badge rounded-pill bg-secondary">Watching TV Shows & Movies</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Languages Known</h2>
+                <app-language-view [language]="'English'" [subText]="'Native or Bilingual Proficiency'" [rating]="5" />
+                <app-language-view [language]="'Hindi'" [subText]="'Native or Bilingual Proficiency'" [rating]="5" />
+                <app-language-view [language]="'Marathi'" [subText]="'Native or Bilingual Proficiency'" [rating]="5" />
+            </div>
+        </div>
+    </div>
+</section>
