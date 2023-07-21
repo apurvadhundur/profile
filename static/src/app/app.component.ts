@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 import { MenuItem, PrimeIcons } from 'primeng/api';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,6 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent implements OnInit {
 
   items: MenuItem[] | undefined;
-  faMagnifyingGlass = faMagnifyingGlass;
 
   constructor(private primengConfig: PrimeNGConfig) { }
 

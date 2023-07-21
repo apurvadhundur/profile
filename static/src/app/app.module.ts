@@ -8,7 +8,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenubarModule } from 'primeng/menubar';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProfileHeaderComponent } from './profile/profile-header.component';
@@ -43,7 +42,6 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MenubarModule,
     RatingModule,
-    FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot(
