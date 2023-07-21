@@ -8,8 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenubarModule } from 'primeng/menubar';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ProfileComponent } from './profile/profile/profile.component';
-import { ProjectsComponent } from './projects/projects/projects.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProfileHeaderComponent } from './profile/profile-header.component';
+import { ProfileBannerComponent } from './profile/profile-banner.component';
+import { ProfileExperienceComponent } from './profile/profile-experience.component';
+import { ProfileEducationComponent } from './profile/profile-education.component';
+import { ProfileOtherComponent } from './profile/profile-other.component';
 
 const appRoutes: Routes = [
   { path: '', component: ProfileComponent },
@@ -22,6 +27,11 @@ const appRoutes: Routes = [
     AppComponent,
     ProfileComponent,
     ProjectsComponent,
+    ProfileHeaderComponent,
+    ProfileBannerComponent,
+    ProfileExperienceComponent,
+    ProfileEducationComponent,
+    ProfileOtherComponent,
   ],
   imports: [
     BrowserModule,

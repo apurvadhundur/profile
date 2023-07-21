@@ -1,15 +1,15 @@
-<p-menubar [model]="items" class="bg-dark">
+<p-menubar [model]="items" class="menubar-fixed">
   <ng-template pTemplate="start">
     <a class="navbar-brand" href="#">Apurva Dhundur</a>
   </ng-template>
-  <ng-template pTemplate="end">
+  <!--<ng-template pTemplate="end">
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-btn">
       <button class="btn btn-secondary" type="button" id="search-btn">
         <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
       </button>
     </div>
-  </ng-template>
+  </ng-template>-->
 </p-menubar>
 
 <router-outlet></router-outlet>

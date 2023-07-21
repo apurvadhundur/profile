@@ -9,6 +9,83 @@ body {
     margin: 0;
 }
 
+.menubar-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.p-menubar-button {
+    position: absolute;
+    right: 10px;
+}
+
 p-menubarsub {
     margin-left: 10px;
+}
+
+.profile-header h1 {
+    margin-top: 150px;
+    font-size: 42pt;
+}
+
+.profile-header h3 {
+    font-weight: 600;
+}
+
+.profile-header {
+    background-image: url("/assets/profile.JPG");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.profile-gradient {
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+}
+
+@media (max-width: 991px) {
+    .profile-gradient {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-gradient {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    }
+}
+
+.profile-header-end {
+    margin-bottom: 150px;
+}
+
+.skills-list > .badge {
+    margin: 3px;
+}
+
+.profile-banner {
+    background-color: #212121;
+}
+
+.profile-banner a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.profile-banner a:hover {
+    color: #EEEEEE;
+    text-decoration: underline;
+}
+
+.profile-banner .table > :not(caption) > * > * {
+    background-color: inherit;
+    color: inherit;
+}
+
+.highlight-text {
+    background-color: #FFFF8D;
+    padding: 0 5px;
+    font-weight: 500;
 }
