@@ -17,6 +17,7 @@ import { ProfileEducationComponent } from './profile/profile-education.component
 import { ProfileOtherComponent } from './profile/profile-other.component';
 import { LanguageViewComponent } from './profile/language-view.component';
 import { RatingModule } from 'primeng/rating';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 const appRoutes: Routes = [
   { path: '', component: ProfileComponent },
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
     RatingModule,
     ReactiveFormsModule,
     FormsModule,
+    TabMenuModule,
     RouterModule.forRoot(
       appRoutes
     )
